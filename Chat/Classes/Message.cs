@@ -1,11 +1,12 @@
-﻿public class Message
+﻿namespace Chat.Classes;
 
+public class Message
 {
-    public string User { get; set; }
-    public string Text { get; set; }
-    public string Avatar { get; set; }
-    public string Room { get; set; }
+    public required string User { get; set; }
+    public required string Text { get; set; }
+    public required string Avatar { get; set; }
+    public required string Room { get; set; }
 
-    public int? Id { get; set; }    
+    public int? Id { get; set; }
     public DateTime Fecha { get; set; }
 }
